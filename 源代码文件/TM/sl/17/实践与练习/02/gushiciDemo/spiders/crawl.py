@@ -20,10 +20,9 @@ class QuotesSpider(scrapy.Spider):
         page = response.url[-6]
         # 根据页数设置文件名称
         filename = 'gushici-%s.html' % page
-        #以写入文件模式打开文件，如果没有该文件将创建该文件
+        # 以写入文件模式打开文件，如果没有该文件将创建该文件
         with open(filename, 'wb') as f:
             # 向文件中写入获取的html代码
             f.write(response.body)
         # 输出保存文件的名称
         self.log('Saved file %s' % filename)
-
