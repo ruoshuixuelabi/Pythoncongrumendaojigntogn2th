@@ -1,5 +1,6 @@
 import requests
 from get_stations import *
+
 # from fake_useragent import UserAgent  # 导入伪造头部信息的模块
 
 '''5-7 目的地 3  车次 6  出发地 8  出发时间 9  到达时间 10 历时 26 无坐 29 硬座

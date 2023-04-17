@@ -32,5 +32,3 @@ while True:
     screen.fill(color)  # 填充颜色
     screen.blit(ball, ballrect)  # 将图片画到窗口上
     pygame.display.flip()  # 更新全部显示
-
-
